@@ -1,0 +1,335 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f3ed;
+    color: #171717;
+    font-family: 'DM Sans', Arial, sans-serif;
+}
+
+/* Шапка сайту */
+
+header {
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #8c68ff;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #171717;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #8c68ff;
+}
+
+/* Головний екран */
+
+.hero {
+    min-height: 570px;
+    padding: 70px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.tag {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 100px;
+    line-height: 0.9;
+    letter-spacing: -5px;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #8c68ff;
+}
+
+.hero-text > p:not(.tag) {
+    max-width: 420px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    background: #171717;
+    color: white;
+    padding: 16px 23px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.button:hover {
+    background: #8c68ff;
+}
+
+/* Декоративний блок */
+
+.hero-image {
+    position: relative;
+    width: 350px;
+    height: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poster {
+    width: 270px;
+    height: 340px;
+    background: #d5ff3f;
+    border: 2px solid #171717;
+    border-radius: 150px 150px 20px 20px;
+    box-shadow: 10px 10px 0 #171717;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: rotate(5deg);
+    z-index: 2;
+}
+
+.poster h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 65px;
+    line-height: 0.9;
+}
+
+.poster p {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.circle {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background: #ff6b9d;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 800;
+    transform: rotate(-12deg);
+    z-index: 3;
+}
+
+/* Блок трендів */
+
+.trends {
+    background: white;
+    padding: 90px 10%;
+}
+
+.section-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 45px;
+    margin-bottom: 40px;
+    letter-spacing: -2px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    border: 1px solid #e5e5e5;
+    border-radius: 15px;
+    padding: 14px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card-image {
+    height: 220px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.card-image h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 42px;
+    line-height: 0.95;
+    text-align: center;
+}
+
+.card-image span {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 35px;
+}
+
+.pink {
+    background: #ffb6cb;
+}
+
+.purple {
+    background: #c4b2ff;
+}
+
+.green {
+    background: #d9ff6a;
+}
+
+.card h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 19px;
+    margin: 20px 5px 10px;
+}
+
+.card p {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 0 5px 15px;
+}
+
+/* Мотиваційний блок */
+
+.quote {
+    background: #171717;
+    color: white;
+    text-align: center;
+    padding: 90px 10%;
+}
+
+.quote h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 45px;
+    margin: 25px 0;
+    line-height: 1.2;
+}
+
+.quote h2 span {
+    color: #d5ff3f;
+}
+
+.quote p:last-child {
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* Підвал */
+
+footer {
+    padding: 30px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+footer p {
+    font-size: 12px;
+    color: #777;
+}
+
+/* Відображення на телефонах */
+
+@media (max-width: 800px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text > p:not(.tag) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero h1 {
+        font-size: 70px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .quote h2 {
+        font-size: 30px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        gap: 18px;
+    }
+
+    .hero {
+        padding: 50px 5%;
+    }
+
+    .hero h1 {
+        font-size: 58px;
+    }
+}
